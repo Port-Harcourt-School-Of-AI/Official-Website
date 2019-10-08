@@ -1,0 +1,131 @@
+/*FONTS*/
+/*COLOURS*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  /*media queries for font size adaptation
+    @include responsive(big-desktop) {
+        font-size: 75%; //1rem = 12px
+    }
+    @include responsive(landscape-tab) {
+        font-size: 56.25%; //1rem = 9px
+    }
+    @include responsive(portrait-tab) {
+        font-size: 50%; // 1rem = 8px
+    }
+    @include responsive(phone) {
+        font-size: 50%;
+    }*/ }
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw; }
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(5, max-content);
+  grid-template-columns: repeat(12, 1fr); }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style-type: none; }
+
+.heading {
+  text-transform: capitalize; }
+  .heading__1 {
+    backface-visibility: hidden;
+    font-family: "Big Shoulders Text", cursive; }
+    .heading__1--big {
+      display: block;
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 2rem; }
+    .heading__1--small {
+      display: block;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1rem; }
+
+.header {
+  grid-column: 1 / -1;
+  background: linear-gradient(to right bottom, rgba(24, 24, 26, 0.9), rgba(24, 24, 26, 0.9)), url(../media/images/header-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 12rem 1fr; }
+  .header__navigation {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 20rem;
+    padding: 3rem 1rem; }
+  .header__nav-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: .8rem; }
+  .header__nav-link {
+    font-size: 1.5rem; }
+  .header__logo-box {
+    display: flex; }
+  .header__logo {
+    width: 10rem;
+    height: 10rem;
+    margin-top: -3rem; }
+  .header__logo-text {
+    font-size: 2.5rem; }
+  .header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-20%); }
+  .header__buttons {
+    display: flex;
+    padding-top: 2rem; }
+  .header > svg {
+    width: 100%;
+    position: absolute;
+    bottom: -7rem;
+    left: 0; }
+    .header > svg path {
+      fill: #FFF; }
+
+.btn {
+  text-transform: capitalize;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.4rem 4rem;
+  margin: 1rem;
+  border: none; }
+  .btn--white-text {
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #ffffff; }
+  .btn--black-text {
+    background-color: #fff;
+    color: #000000;
+    font-weight: bold; }

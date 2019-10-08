@@ -1,0 +1,19 @@
+{
+  "name": "phc-school-of-ai-website",
+  "version": "1.0.0",
+  "description": "Repository, home to code for our official website",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schoolofaiphc/Official-Website"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

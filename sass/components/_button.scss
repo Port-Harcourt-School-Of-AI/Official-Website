@@ -1,0 +1,20 @@
+.btn{
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 1.4rem 4rem;
+    margin: 1rem;
+    border: none;
+
+    &--white-text{
+       border: 2px solid #fff;
+       background-color: transparent;
+       color: $text-color-light;
+    }
+    &--black-text{
+        background-color: #fff;
+        color: $text-color-dark;
+        font-weight: bold;
+    }
+}

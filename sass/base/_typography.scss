@@ -1,0 +1,21 @@
+.heading{
+    text-transform: capitalize;
+    
+    &__1{
+        backface-visibility: hidden;
+        font-family: $secondary-font;
+
+        &--big{
+          display: block;
+          font-size: 4rem;
+          font-weight: 400;
+          letter-spacing: 2rem;
+        }
+        &--small{
+            display: block;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1rem;
+        }
+    }
+}

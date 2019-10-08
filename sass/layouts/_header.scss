@@ -1,0 +1,81 @@
+.header{
+    grid-column: 1 / -1;
+    background: linear-gradient(to right bottom, rgba($primary-color, 0.9),rgba($primary-color, 0.9)),
+                url(../media/images/header-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    width: 100vw;
+
+    display:grid;
+    grid-template-rows: 12rem 1fr;
+    
+    &__navigation{
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-column-gap: 20rem;
+        padding: 3rem 1rem;
+           
+    }
+
+    &__nav-list ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: .8rem;
+    }
+
+    &__nav-link{
+        font-size: 1.5rem;
+
+    }
+
+    &__logo-box{
+       display:flex; 
+    }
+
+    &__logo{
+        width: 10rem;
+        height: 10rem;
+        margin-top: -3rem;
+    }
+
+    &__logo-text{
+        font-size: 2.5rem;
+    }
+    
+    &__text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-20%);
+    }
+
+    &__buttons{
+        display: flex;
+        padding-top: 2rem;
+
+    }
+
+    & > svg{
+        width: 100%;
+        position: absolute;
+        bottom: -7rem;
+        left: 0;
+
+        & path{
+            fill: #FFF;
+        }
+    }   
+    
+    
+
+    
+
+}
