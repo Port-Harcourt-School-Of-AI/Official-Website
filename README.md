@@ -1,2 +1,2 @@
 # Official-Website
-Repository, home to code for our official website
+Repository to code for our official website
