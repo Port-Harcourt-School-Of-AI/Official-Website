@@ -37,15 +37,25 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 100vh repeat(5, max-content);
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100vh repeat(5, min-content);
+    grid-template-columns: [margin-l-start] 1fr [margin-l-end col-start] repeat(10, 1fr) [col-end margin-r-start]1fr[margin-r-end];
 
 }    
 
-a{
+a, li{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
+
 ul{
     list-style-type: none;
 }
+
+button:focus,
+input:focus,
+textarea:focus{
+    outline: 1px solid $primary-color;
+}
+
+

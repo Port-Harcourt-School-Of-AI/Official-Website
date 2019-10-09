@@ -1,0 +1,42 @@
+.about-us__gallery{
+    position: relative;
+}
+.gallery{
+    &__photo{
+        width: 50%;
+        height: 15rem;
+        box-shadow: $default-box-shadow;
+        border-radius: .2rem;
+        position: absolute;
+        outline-offset: 2rem;
+        transition: all .2s;
+
+        &--1{
+           left: 0;
+           top: -2rem;
+        }
+        &--2{
+           right: 3rem;
+           top: 2rem; 
+        }
+        &--3{
+           top: 9rem;
+           left: 3rem;  
+        }
+        &--4{
+           right: 0;
+           top: 14rem; 
+        }
+        &--5{
+            left:25%;
+            top: 6rem;
+        }
+
+        &:hover{
+            outline: 1rem solid $primary-color;
+            transform: scale(1.4) translateY(-.5rem  );
+            box-shadow: 0 2.5rem 4rem rgba($primary-color, .5);
+            z-index: 20;
+        }
+    }
+}

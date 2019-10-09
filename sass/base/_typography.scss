@@ -1,15 +1,15 @@
 .heading{
     text-transform: capitalize;
+    font-family: $secondary-font;
     
     &__1{
         backface-visibility: hidden;
-        font-family: $secondary-font;
-
+        
         &--big{
           display: block;
           font-size: 4rem;
-          font-weight: 400;
-          letter-spacing: 2rem;
+          font-weight: 500;
+          letter-spacing: 1.8rem;
         }
         &--small{
             display: block;
@@ -17,5 +17,22 @@
             font-weight: 700;
             letter-spacing: 1rem;
         }
+    }
+    &__2{
+        font-size: 4rem;
+        font-weight:700;
+        margin-bottom: 8rem;
+    }
+    &__3{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
+.paragraph{
+    font-size: $default-font-size;
+    font-family: $primary-font;
+    
+    &:not(:last-child){
+        margin-bottom: 2.5rem;
     }
 }

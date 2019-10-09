@@ -1,0 +1,20 @@
+.footer{
+    position: relative;
+    grid-column: 1 / -1;
+    background: $primary-color-light;
+    height: 20rem;
+    width: 100vw;
+    margin-top: 20rem;
+
+    & svg{
+        width: 100%;
+        position: absolute;
+        top: -20rem;
+        left: 0;
+        right:0;
+
+        & path{
+            fill: $primary-color-light
+        }
+    }    
+}

@@ -8,8 +8,15 @@ $primary-color: #18181a;
 $primary-color-light: #3e3e40;
 $secondary-color: #eeeeee;
 $secondary-color-dark: #dadadb;
+$background-color-grey: #f7f7f7;
 $text-color-dark: #000000;
 $text-color-light: #ffffff;
+$text-color-grey: #777777;
 
+//DEFAULT BOX SHADOWS
+$default-box-shadow: 0 1.5rem 4rem rgba($text-color-dark, .4);
+$box-shadow-active: 0 .5rem 1rem rgba($text-color-dark, .8);
+$box-shadow-hover : 0px 1rem 2rem rgba($text-color-dark, .2);
 
-
+//FONT_SIZES
+$default-font-size: 1.6rem;
