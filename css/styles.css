@@ -113,6 +113,7 @@ textarea:focus {
   .header__navigation {
     display: grid;
     grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content;
     grid-column-gap: 20rem;
     padding: 3rem 1rem; }
   .header__nav-list ul {
@@ -172,18 +173,33 @@ textarea:focus {
 .footer {
   position: relative;
   grid-column: 1 / -1;
-  background: rgba(62, 62, 64, 0.9);
-  height: 20rem;
+  background: #151517;
   width: 100vw;
-  margin-top: 20rem; }
+  height: 100%;
+  margin-top: 10rem;
+  color: #ffffff; }
   .footer svg {
-    width: 100%;
-    position: absolute;
-    top: -20rem;
-    left: 0;
-    right: 0; }
+    width: 100%; }
     .footer svg path {
-      fill: rgba(62, 62, 64, 0.9); }
+      fill: #fff; }
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem; }
+  .footer__contact {
+    font-size: 2rem; }
+  .footer__icon {
+    color: #fff;
+    width: 2.5rem;
+    height: 2rem;
+    display: inline-block;
+    margin-right: 1.1rem;
+    transition: all .2s; }
+    .footer__icon:hover {
+      transform: translateY(-0.5rem);
+      color: #1a8981; }
 
 .btn {
   text-transform: capitalize;

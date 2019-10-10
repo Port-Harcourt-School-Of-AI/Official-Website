@@ -18,6 +18,7 @@
     &__navigation{
         display: grid;
         grid-template-columns: max-content 1fr;
+        grid-template-rows: max-content;
         grid-column-gap: 20rem;
         padding: 3rem 1rem;
            
