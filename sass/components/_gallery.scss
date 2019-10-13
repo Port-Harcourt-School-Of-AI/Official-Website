@@ -4,7 +4,7 @@
 .gallery{
     &__photo{
         width: 50%;
-        height: 15rem;
+        height: 20rem;
         box-shadow: $default-box-shadow;
         border-radius: .2rem;
         position: absolute;
@@ -16,16 +16,16 @@
            top: -2rem;
         }
         &--2{
-           right: 3rem;
-           top: 2rem; 
+           right: 2rem;
+           top: .5rem; 
         }
         &--3{
-           top: 9rem;
-           left: 3rem;  
+           top: 15rem;
+           left: 2rem;  
         }
         &--4{
            right: 0;
-           top: 14rem; 
+           top: 17rem; 
         }
         &--5{
             left:25%;

@@ -8,7 +8,6 @@
 html{
     //This defines what 1rem should be..
     font-size: 62.5%;
-    max-width: 100vw;
     box-sizing: border-box;
 
     /*media queries for font size adaptation
@@ -32,13 +31,18 @@ body{
     line-height: 1.6;
     margin:0;
     padding:0;
-    max-width: 100vw;
 }
 
 .container{
     display: grid;
-    grid-template-rows: 100vh repeat(5, min-content);
-    grid-template-columns: [margin-l-start] 1fr [margin-l-end col-start] repeat(10, 1fr) [col-end margin-r-start]1fr[margin-r-end];
+    grid-template-columns: 12rem 1fr 12rem;
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "header header header"
+              ". about ."
+              "actions actions actions"
+              ". tweets ."
+              "footer footer footer";
 
 }    
 

@@ -1,0 +1,20 @@
+.actions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    margin-bottom: 3rem;
+}  
+.action{
+    display: flex;
+
+    & span{
+        font-size: 3rem;
+        margin-right: 3rem;
+        color: $contrast-color;
+    }
+    & p{
+        font-size: 1.7rem;
+        font-family: $primary-font;
+        color: $primary-color-light
+    }
+}

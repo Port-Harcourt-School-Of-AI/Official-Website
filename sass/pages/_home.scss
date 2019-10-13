@@ -1,6 +1,53 @@
+.header{
+    grid-area: header;
+}
+.about{
+    grid-area: about;
+}
+.our-actions{
+    grid-area: actions;
+    background-color: $secondary-color;
+    padding: 7rem 0;
+
+    display: grid;
+    grid-template-columns: 12rem 1fr 12rem;
+    
+    &__box{
+        grid-column: 2 / 3;
+    }
+}
+.tweets{
+    grid-area: tweets;
+
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div{
+            outline: 1rem solid $primary-color;
+            outline-offset: 1rem;
+
+        }
+    }
+}
+.footer{
+    grid-area: footer;
+}
 .about-us{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: max-content;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
     grid-column-gap: 5rem;
 }
+
+.mvp{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10rem;
+}
+.actions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}  

@@ -1,0 +1,58 @@
+.mvp{
+    &-card{
+        perspective: 150rem;
+        -moz-perspective: 150rem;
+        position:relative;
+        height: 20rem;
+        margin-top: 15rem;
+        margin-bottom: 9rem;
+
+      &__side{
+        height: 20rem;
+        transition: all .5s ease;
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow:$default-box-shadow;  
+        color: $text-color-dark;  
+        
+        &--front{
+            background-color: $secondary-color;
+            color: $contrast-color;
+              
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &--back{
+            background-color: #fff;
+            color: $text-color-dark;
+            transform: rotateY(180deg);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:2rem;
+        }
+       
+      }
+
+     &:hover &__side--front{
+        transform: rotateY(-180deg);
+     }
+
+     &:hover &__side--back{
+        transform: rotateY(0);
+     }
+
+     &__icon{
+        font-size: 5rem;
+     }
+    
+  }
+}
