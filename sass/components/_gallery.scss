@@ -33,6 +33,7 @@
         }
 
         &:hover{
+            cursor: pointer;
             outline: 1rem solid $primary-color;
             transform: scale(1.4) translateY(-.5rem  );
             box-shadow: 0 2.5rem 4rem rgba($primary-color, .5);

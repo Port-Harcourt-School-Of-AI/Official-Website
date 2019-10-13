@@ -80,7 +80,7 @@ textarea:focus {
       font-weight: 500;
       letter-spacing: 1.5rem; }
       .heading--1--big:after {
-        top: 2.5rem;
+        top: 1rem;
         left: 8.5rem; }
     .heading--1--small {
       display: block;
@@ -88,7 +88,6 @@ textarea:focus {
       font-weight: 700;
       letter-spacing: 1rem; }
       .heading--1--small:after {
-        top: 9rem;
         left: 32.5rem; }
   .heading--2 {
     font-size: 4rem;
@@ -145,7 +144,8 @@ textarea:focus {
   overflow: hidden;
   height: 100vh;
   display: grid;
-  grid-template-rows: min-content 1fr min-content; }
+  grid-template-rows: min-content 1fr min-content;
+  transition: all 0.7s ease-in; }
   .header__navigation {
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -197,11 +197,19 @@ textarea:focus {
     transform: translateY(3rem); }
   .header__buttons {
     display: flex;
-    padding-top: 3rem; }
+    padding-top: 5rem; }
   .header > svg {
     margin-top: 3rem; }
     .header > svg path {
       fill: #FFF; }
+
+.sticky {
+  position: fixed;
+  background-color: rgba(21, 32, 38, 0.8);
+  height: 10rem;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.7s ease-in; }
 
 .footer {
   background: #152026;
@@ -305,6 +313,7 @@ textarea:focus {
     left: 25%;
     top: 6rem; }
   .gallery__photo:hover {
+    cursor: pointer;
     outline: 1rem solid #152026;
     transform: scale(1.4) translateY(-0.5rem);
     box-shadow: 0 2.5rem 4rem rgba(21, 32, 38, 0.5);

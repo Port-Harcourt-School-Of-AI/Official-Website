@@ -12,6 +12,7 @@
 
     display:grid;
     grid-template-rows: min-content 1fr min-content;
+    transition: all 0.7s ease-in;
     
     &__navigation{
 
@@ -91,7 +92,7 @@
 
     &__buttons{
         display: flex;
-        padding-top: 3rem;
+        padding-top: 5rem;
 
     }
 
@@ -102,4 +103,12 @@
         }
     }   
     
+}
+.sticky {
+    position: fixed;
+    background-color: rgba($primary-color, 0.8);
+    height: 10rem;
+    width: 100vw;
+    z-index: 1000;
+    transition: all 0.7s ease-in;
 }

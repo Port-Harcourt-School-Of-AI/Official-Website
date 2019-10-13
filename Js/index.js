@@ -1,15 +1,20 @@
-// Scroll to top button functionalities
+// Scroll to top button and sticky header functionalities
 const scrollToTopButton = document.getElementById('js-top');
+const navigation = document.querySelector('.header__navigation');
+console.log(navigation, scrollToTopButton);
 
 const scrollFunc = () => {
   // Get the current scroll value
   let Y = window.scrollY;
   
   // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-  if (Y > 200) {
+  if (Y > 600) {
     scrollToTopButton.className = "top-btn show";
+    navigation.classList.add('sticky');
+
   } else {
     scrollToTopButton.className = "top-btn hide";
+    navigation.classList.remove('sticky');
   }
 };
 
@@ -33,3 +38,4 @@ scrollToTopButton.onclick = function(e) {
   e.preventDefault();
   scrollToTop();
 }  
+
