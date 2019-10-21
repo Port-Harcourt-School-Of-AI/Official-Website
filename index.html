@@ -12,9 +12,9 @@
     <!-- icon fonts-->
     <link rel="stylesheet" href="iconfonts/style.css">
     <!--Browser Resets-->
-    <link rel="stylesheet" href="plugins/normalize.css">
+    <link rel="stylesheet" href="css/plugins/normalize.css">
     <!--Custom Styles-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
 
     <!--Google Fonts-->
     <link
@@ -25,24 +25,36 @@
     <title>Port Harcourt School Of AI</title>
 </head>
 
-<body class="container">
+<body class="home-container">
     <header class="header">
-        <div class="header__navigation">
-            <div class="header__logo-box">
+        <div class="navigation">
+            <div class="navigation__logo-box">
                 <a href="index.html">
-                    <img class="header__logo" src="media/logos/whitelogo-transparent.png"
-                        alt="Port Harcourt School of AI Logo">
+                    <img class="navigation__logo" src="media/logos/whitelogo-transparent.png"
+                        alt="Port Harcourt School of AI Logo"
+                    >
                 </a>
-                <span class="header__logo-text">Port Harcourt School of AI</span>
+                <span class="navigation__logo-text"> 
+                    <a href="index.html">Port Harcourt School of AI</a>
+                </span>
 
             </div>
-            <div class="header__nav-list">
+
+            <!--Hidden collapsed nav for mobile and tablet view-->
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon"></span>
+            </label>
+            <div class="navigation__background"></div>
+            <!--End-->
+
+            <div class="navigation__nav-list">
                 <ul>
-                    <li class="header__nav-link"><a href="#">About</a></li>
-                    <li class="header__nav-link"><a href="#">Team</a></li>
-                    <li class="header__nav-link"><a href="#">Learning Curriculum</a></li>
-                    <li class="header__nav-link"><a href="#">Blog</a></li>
-                    <li class="header__nav-link"><a href="#">Events</a></li>
+                    <li class="navigation__nav-link"><a href="about.html">About</a></li>
+                    <li class="navigation__nav-link"><a href="team.html">Team</a></li>
+                    <li class="navigation__nav-link"><a href="#">Learning Curriculum</a></li>
+                    <li class="navigation__nav-link"><a href="#">Blog</a></li>
+                    <li class="navigation__nav-link"><a href="#">Events</a></li>
                 </ul>
 
             </div>
@@ -50,16 +62,16 @@
 
         <div class="header__text">
             <h1 class="heading--1">
-                <span class="heading--1--big " data-shadow="Building A Community of AI Talents">
+                <span class="heading--1--big ">
                     Building A Community of AI Talents 
                 </span>
-                <span class="heading--1--small" data-shadow="in Port Harcourt and Beyond!!">
+                <span class="heading--1--small">
                     in Port Harcourt and Beyond!!
                 </span>
             </h1>
             <div class="header__buttons">
-                <button class="btn btn--black-text"><a href="#">Join Us</a></button>
-                <button class="btn btn--white-text"><a href="#">Support Us</a></button>
+                <button class="btn btn--black-text"><a href="about.html">Join Us</a></button>
+                <button class="btn btn--white-text"><a href="about.html#support">Support Us</a></button>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -76,35 +88,38 @@
         <div class="about-us u-margin-bottom-meduim">
             <div class="about-us__text">
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi blanditiis eaque,
-                    explicabo sapiente repellendus natus, voluptate doloribus vitae ducimus accusantium alias
-                    consequatur obcaecati.
-                    Ab eligendi distinctio nemo repudiandae perspiciatis amet!
+                    Port Harcourt School Of AI, is a non-profit organization resident in Port Harcourt,
+                    that focuses on decentralizing AI and making World Class AI & Data Science education accessible 
+                    to anyone in Port Harcourt and Rivers State as a whole for <span class="u-bold-text">FREE</span> 
+                    through collaborative learning using study groups.
                 </p>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi blanditiis eaque,
-                    explicabo sapiente repellendus natus, voluptate doloribus vitae ducimus accusantium alias
-                    consequatur obcaecati.
-                    Ab eligendi distinctio nemo repudiandae perspiciatis amet!
+                    Our purpose is to raise talents, that will birth innovations and also leverage on the power 
+                    of AI and Data Science to solve local problems thereby creating opportunities and making 
+                    positive impacts on thier communities and <span class="u-bold-text">WE CAN'T DO IT ALONE!!!</span>
                 </p>
-                <button class="btn btn--default"><a href="#">Support Us</a></button>
+                <div class="about-us__buttons">
+                    <button class="btn btn--default"><a href="about.html#support">Support Us</a></button>
+                    <button class="btn btn--default-dark"><a href="about.html">Read More</a></button>
+                </div>
+                
 
             </div>
-            <div class="about-us__gallery u-margin-bottom-big">
-                <img src="media/images/gallery/galleryp1.jpg" alt="Photo of a beautiful sunset on an island"
+            <div class="about-us__gallery">
+                <img src="media/images/gallery/galleryp1.jpg" alt="Photo 1 of of Port-Harcourt School Of AI members in a study group"
                     class="gallery__photo gallery__photo--1">
-                <img src="media/images/gallery/galleryp2.jpg" alt="Photo of a beautiful sunset on an island"
+                <img src="media/images/gallery/galleryp2.jpg" alt="Photo 2 of of Port-Harcourt School Of AI members in a study group"
                     class="gallery__photo gallery__photo--2">
-                <img src="media/images/gallery/galleryp3.jpg" alt="Photo of a beautiful sunset on an island"
+                <img src="media/images/gallery/galleryp3.jpg" alt="Photo 3 of of Port-Harcourt School Of AI members in a study group"
                     class="gallery__photo gallery__photo--3">
-                <img src="media/images/gallery/galleryp4.jpg" alt="Photo of a beautiful sunset on an island"
+                <img src="media/images/gallery/galleryp4.jpg" alt="Photo 4 of of Port-Harcourt School Of AI members in a study group"
                     class="gallery__photo gallery__photo--4">
-                <img src="media/images/gallery/galleryp5.jpg" alt="Photo of a beautiful sunset on an island"
+                <img src="media/images/gallery/galleryp5.jpg" alt="Photo 5 of of Port-Harcourt School Of AI members in a study group"
                     class="gallery__photo gallery__photo--5">
             </div>
 
         </div>
-        <div class="mvp u-margin-top-big">
+        <div class="mvp">
             <div class="mvp-card">
                 <div class="mvp-card__side mvp-card__side--front">
                     <span class="mvp-card__icon">
@@ -165,27 +180,27 @@
             <div class="actions">
                 <div class="action">
                     <span class="icon-circle-right"></span>
-                    <p class="heading--3">We organize AI meetup to engage people</p>
+                    <p class="paragraph">We organize AI meetup to engage people</p>
                 </div>
                 <div class="action">
                     <span class="icon-circle-right"></span>
-                    <p class="heading--3">Boost your knowledge to participate our workshop</p>
+                    <p class="paragraph">Boost your knowledge to participate our workshop</p>
                 </div>
                 <div class="action">
                     <span class="icon-circle-right"></span>
-                    <p class="heading--3">Conducted Webinars</p>
+                    <p class="paragraph">Conducted Webinars</p>
                 </div>
                 <div class="action">
                     <span class="icon-circle-right"></span>
-                    <p class="heading--3">Organize Study group to imporve your AI knowledge</p>
+                    <p class="paragraph">Organize Study group to imporve your AI knowledge</p>
                 </div>
                 <div class="action">
                     <span class="icon-circle-right"></span>
-                    <p class="heading--3">Organize Study group to imporve your AI knowledge</p>
+                    <p class="paragraph">Organize Study group to imporve your AI knowledge</p>
                 </div>
                 <div class="action">
                     <span class="icon-circle-right"></span>
-                    <p class="heading--3">Engage with leaders from top industry and research groups</p>
+                    <p class="paragraph">Engage with leaders from top industry and research groups</p>
                 </div>
             </div>
 
@@ -224,7 +239,7 @@
                     <a href="https://twitter.com/PHCSchoolOfAI"><i class="icon-twitter"></i></a>
                 </span>
                 <span class="footer__icon">
-                    <a href="@mailto:portharcourtschool@gmail.com"><i class="icon-mail3"></i></a>
+                    <a href="@mailto:portharcourtschoolofai@gmail.com"><i class="icon-mail3"></i></a>
                 </span>
                 <span class="footer__icon">
                     <a href="https://github.com/Port-Harcourt-School-Of-AI"><i class="icon-github"></i></a>

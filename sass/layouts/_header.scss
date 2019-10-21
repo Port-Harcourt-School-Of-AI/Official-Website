@@ -1,6 +1,6 @@
 .header{
     background: linear-gradient(to right bottom, rgba($primary-color, 0.8),rgba($primary-color, 0.8)),
-                url(../media/images/header-image.png);
+                url(../../media/images/header-image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,77 +8,15 @@
     color: #FFF;
     text-align: center;
     overflow: hidden;
-    height: 100vh;
+    height: 110vh;
+
+    @media only screen and (max-width: $tablet){ 
+        height: 100vh;
+    }
 
     display:grid;
     grid-template-rows: min-content 1fr min-content;
     transition: all 0.7s ease-in;
-    
-    &__navigation{
-
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-column-gap: 18rem;
-        padding: 3rem 1rem;
-           
-    }
-
-    &__nav-list ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: -.8rem;
-    }
-
-    &__nav-link{
-        font-size: 1.6rem;
-        transition: all .3s;
-        padding: 1rem;
-
-        &:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background: $contrast-color;
-            visibility: hidden;
-            border-radius: 2px;
-            transform: scaleX(0);
-            transition: .25s linear;
-        }
-        &:hover:before,
-        &:focus:before {
-            visibility: visible;
-            transform: scaleX(1);
-            cursor: pointer;
-        }
-        
-        &:hover{
-            transform: translateY(-3px);
-            
-            
-        }
-        &:active{
-            border-bottom: 2px solid $contrast-color; 
-        }
-    }
-
-    &__logo-box{
-       display:flex; 
-
-    }
-
-    &__logo{
-        width: 10rem;
-        height: 10rem;
-        margin-top: -3rem;
-    }
-
-    &__logo-text{
-        font-size: 2.5rem;
-    }
     
     &__text{
       display: flex;
@@ -97,18 +35,10 @@
     }
 
     & > svg{
-        margin-top: 3rem;
+        margin-top: .5rem;
         & path{
             fill: #FFF;
         }
     }   
     
-}
-.sticky {
-    position: fixed;
-    background-color: rgba($primary-color, 0.8);
-    height: 10rem;
-    width: 100vw;
-    z-index: 1000;
-    transition: all 0.7s ease-in;
 }

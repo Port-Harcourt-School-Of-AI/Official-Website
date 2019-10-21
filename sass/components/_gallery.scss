@@ -1,5 +1,11 @@
 .about-us__gallery{
     position: relative;
+    margin-bottom: 8rem;
+    
+    @media only screen and (max-width: $tablet-small){
+        margin:  12rem 0;
+    }
+
 }
 .gallery{
     &__photo{
@@ -10,6 +16,10 @@
         position: absolute;
         outline-offset: 2rem;
         transition: all .2s;
+
+        @media only screen and (max-width: $tablet-small){ 
+            height: 25rem;
+        }
 
         &--1{
            left: 0;

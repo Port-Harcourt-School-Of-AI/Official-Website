@@ -34,9 +34,14 @@
           font-weight: 500;
           letter-spacing: 1.5rem;
 
+          @media only screen and (max-width: $tablet-small){ 
+            font-size: 3rem;
+            letter-spacing: 1.2rem;
+          }
+
           &:after{
             top: 1rem; 
-            left: 8.5rem;
+            left: 9rem;
           }
         }
         &--small{
@@ -44,10 +49,14 @@
             font-size: 3rem;
             font-weight: 700;
             letter-spacing: 1rem;
+
+            @media only screen and (max-width: $tablet-small){ 
+                font-size: 2rem;
+            }
             
             &:after{
                 //top: 9rem; 
-                left: 32.5rem;
+                left: 34rem;
             }
             
         }    
@@ -58,12 +67,20 @@
         font-weight:500;
         margin-bottom: 8rem;
         color: $primary-color;
+
+        @media only screen and (max-width: $tablet-small){ 
+            font-size: 3rem;
+        }
         
         &--small{
             font-size: 4rem;
             font-weight:500;
             margin-bottom: 6rem;
             color: $primary-color;
+
+            @media only screen and (max-width: $tablet-small){ 
+                font-size: 3rem;
+            }
         }
     }
     &--3{

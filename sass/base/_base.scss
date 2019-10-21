@@ -7,22 +7,18 @@
 }
 html{
     //This defines what 1rem should be..
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px
     box-sizing: border-box;
+    
+    //changing root font size of screen sizes
+    @media only screen and (min-width: $desktop){
+        font-size: 100%; //16px
+    }
+    @media only screen and (max-width: $laptop-small){
+        font-size: 50%; //1rem = 8px
+    }
 
-    /*media queries for font size adaptation
-    @include responsive(big-desktop) {
-        font-size: 75%; //1rem = 12px
-    }
-    @include responsive(landscape-tab) {
-        font-size: 56.25%; //1rem = 9px
-    }
-    @include responsive(portrait-tab) {
-        font-size: 50%; // 1rem = 8px
-    }
-    @include responsive(phone) {
-        font-size: 50%;
-    }*/
+
 }
 body{
     box-sizing: border-box;
@@ -33,18 +29,7 @@ body{
     padding:0;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 12rem 1fr 12rem;
-    grid-template-rows: auto;
-    grid-template-areas: 
-              "header header header"
-              ". about ."
-              "actions actions actions"
-              ". tweets ."
-              "footer footer footer";
 
-}    
 
 a, li{
     text-decoration: none;

@@ -1,0 +1,127 @@
+.team-member{
+    height: 43rem;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow:$box-shadow-hover;
+    position: relative;
+    margin-bottom: 6rem;
+
+    &__picture{
+        background-size: cover;
+        background-blend-mode: color;
+        height:25rem;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        
+        /*
+        Images for the team members are defined here, simply up the --1 class by one add it under and then 
+        update the url of the background image
+        */
+        &--1{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/stephen.jpg);
+
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/linda-ikechukwu.jpg);
+
+        }
+        &--3{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/brain.jpg);
+
+        }
+        &--4{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/tonye.jpg);
+
+        }
+        &--5{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/boris.jpg);
+
+        }
+        &--6{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/rising.jpg);
+
+        }
+        &--7{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/Jennifer.jpg);
+
+        }
+        &--8{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/george.jpg);
+
+        }
+        &--9{
+            background-image: linear-gradient(to right bottom,$primary-color,$primary-color),
+            url(../../media/team/yoma.jpg);
+
+        }
+        
+    }
+
+    &__name{
+        color: $text-color-light;
+        font-size: 2.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        position:absolute;
+        top: 21rem;
+        right:-1rem;
+        width: 65%;
+    }
+    &__name-span{
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break:clone;
+        box-decoration-break: clone;
+        background-image: linear-gradient(to right bottom, rgba($contrast-color, 0.6),
+                          rgba($contrast-color, 0.6));
+    }
+    
+    &__details{
+        padding: 1rem;
+
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li{
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 1rem;
+                text-transform: capitalize;
+
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+
+    &__role{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    &__contact{
+        color: $contrast-color;
+
+        & > a > i{
+            margin: 0 10px;
+            display: inline-block;
+
+            &:hover{
+               transform: scale(1.2);
+            }
+        }
+    }
+}

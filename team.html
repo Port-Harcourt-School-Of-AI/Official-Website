@@ -12,9 +12,9 @@
     <!-- icon fonts-->
     <link rel="stylesheet" href="iconfonts/style.css">
     <!--Browser Resets-->
-    <link rel="stylesheet" href="plugins/normalize.css">
+    <link rel="stylesheet" href="css/plugins/normalize.css">
     <!--Custom Styles-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
 
     <!--Google Fonts-->
     <link
@@ -25,37 +25,258 @@
     <title>Port Harcourt School Of AI</title>
 </head>
 
-<body>
-    <div class="header__navigation">
-        <div class="header__logo-box">
+<body class="team-container">
+    <div class="navigation default-nav">
+        <div class="navigation__logo-box">
             <a href="index.html">
-                <img class="header__logo" src="media/logos/whitelogo-transparent.png"
+                <img class="navigation__logo" src="media/logos/whitelogo-transparent.png"
                     alt="Port Harcourt School of AI Logo">
             </a>
-            <span class="header__logo-text">Port Harcourt School of AI</span>
+            <span class="navigation__logo-text">
+                <a href="index.html">Port Harcourt School of AI</a>
+            </span>
 
         </div>
-        <div class="header__nav-list">
+        
+        <!--Hidden collapsed nav for mobile and tablet view-->
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+        <div class="navigation__background"></div>
+        <!--End-->
+
+        <div class="navigation__nav-list">
             <ul>
-                <li class="header__nav-link"><a href="#">About</a></li>
-                <li class="header__nav-link"><a href="#">Team</a></li>
-                <li class="header__nav-link"><a href="#">Learning Curriculum</a></li>
-                <li class="header__nav-link"><a href="#">Blog</a></li>
-                <li class="header__nav-link"><a href="#">Events</a></li>
+                <li class="navigation__nav-link"><a href="about.html">About</a></li>
+                <li class="navigation__nav-link"><a href="team.html">Team</a></li>
+                <li class="navigation__nav-link"><a href="#">Learning Curriculum</a></li>
+                <li class="navigation__nav-link"><a href="#">Blog</a></li>
+                <li class="navigation__nav-link"><a href="#">Events</a></li>
             </ul>
 
         </div>
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+            d="M0,192L60,192C120,192,240,192,360,208C480,224,600,256,720,272C840,288,960,288,1080,250.7C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+        </path>
+    </svg>
+    <section class="quote">
+        <p>
+            " No one can whistle a symphony alone. <br /> It takes a whole orchestra to play it "
+            <br />
+            <span>
+                - H.E Luccok
+            </span>
+        </p>
+    </section>
+    <section class="team u-margin-top-huge">
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--1"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                    Stephen Oladele
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Dean</li>
+                    <li class="team-member__title">Data Scientist, ML</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/nerdCyberArtist"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--2"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                    Linda Ikechukwu
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Community Manager</li>
+                    <li class="team-member__title">Frontend Engineer, React</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/_MsLinda"><i class="icon-twitter"></i></a>
+                        <a href="@mailto:lindaedwin96@gmail.com"><i class="icon-mail3"></i></a>
+                        <a href="https://github.com/Linda-Ikechukwu"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--3"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                    Aboze brain
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Learning Facilator</li>
+                    <li class="team-member__title">Machine Learning Enthusiast</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/AbozeBrain"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--4"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                    Tonye Hary
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Mentor </li>
+                    <li class="team-member__title">Data Analyst : Phyton, R & SQL</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/harrytonye1"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--5"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                    Emeka Boris
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Learning Facilitator</li>
+                    <li class="team-member__title">Data Scientist</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/emekaboris"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--6"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                     Rising Odegua
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Mentor</li>
+                    <li class="team-member__title">Data Science & Machine Learning</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/risin_developer"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--7"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                     Jennifer Okpala
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Documentation Officer</li>
+                    <li class="team-member__title">Data Science</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/jenniferokpala7"><i class="icon-twitter"></i></a>
+                        <a href="@mailto:jeniokpala@gmail.com"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--8"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                     George Boma
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Learning Facilitator</li>
+                    <li class="team-member__title">Data Science</li>
+                    <li class="team-member__contact">
+                        <a href="#"><i class="icon-twitter"></i></a>
+                        <a href="@mailto:bomageoege90@gmail.com"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=team-member>
+            <div class="team-member__picture team-member__picture--9"></div>
+            <h4 class="team-member__name">
+                <span class="team-member__name-span">
+                     Yoma Okobiah
+                </span>
+            </h4>
+            <div class="team-member__details">
+                <ul>
+                    <li class="team-member__role">Volunteer</li>
+                    <li class="team-member__title">Data Science</li>
+                    <li class="team-member__contact">
+                        <a href="https://twitter.com/yomdriod"><i class="icon-twitter"></i></a>
+                        <a href="#"><i class="icon-mail3"></i></a>
+                        <a href="#"><i class="icon-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0099ff" fill-opacity="1"
-                d="M0,32L60,32C120,32,240,32,360,42.7C480,53,600,75,720,90.7C840,107,960,117,1080,144C1200,171,1320,213,1380,234.7L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            <path
+                d="M0,192L60,192C120,192,240,192,360,208C480,224,600,256,720,272C840,288,960,288,1080,250.7C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
             </path>
         </svg>
-    </div>
-    <div class="quote">
-        <p>
-            "No one can whistle a symphony . It takes a whole orchestra to play it"
-        </p>
-    </div>
+        <div class="footer__text ">
+            <p class="footer__contact u-margin-bottom-small">Get in Touch :
+                <span class="footer__icon">
+                    <a href="https://twitter.com/PHCSchoolOfAI"><i class="icon-twitter"></i></a>
+                </span>
+                <span class="footer__icon">
+                    <a href="@mailto:portharcourtschoolofai@gmail.com"><i class="icon-mail3"></i></a>
+                </span>
+                <span class="footer__icon">
+                    <a href="https://github.com/Port-Harcourt-School-Of-AI"><i class="icon-github"></i></a>
+                </span>
+            </p>
+            <p class="paragraph">
+                &copy; 2019 Port Harcourt School Of AI. Design by
+                <a href="https://twitter.com/_MsLinda">Linda Ikechukwu</a>
+            </p>
+        </div>
+    </footer>
+    <a class="top-btn hide" href="" id="js-top">
+        <span class="icon-arrow-up"></span>
+        <span class="screen-reader-text">Back to top</span>
+    </a>
+
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>

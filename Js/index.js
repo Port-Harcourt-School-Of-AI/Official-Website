@@ -1,6 +1,6 @@
 // Scroll to top button and sticky header functionalities
 const scrollToTopButton = document.getElementById('js-top');
-const navigation = document.querySelector('.header__navigation');
+const navigation = document.querySelector('.navigation');
 console.log(navigation, scrollToTopButton);
 
 const scrollFunc = () => {

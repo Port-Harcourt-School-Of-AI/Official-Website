@@ -18,4 +18,12 @@ $box-shadow-active: 0 .5rem 1rem rgba($text-color-dark, .8);
 $box-shadow-hover : 0px 1rem 2rem rgba($text-color-dark, .2);
 
 //FONT_SIZES
-$default-font-size: 1.6rem;
+$default-font-size: 1.8rem;
+
+//RESPONSIVE BREAKPOINTS. How to calculate : Xpx / 16
+$desktop: 112.5em; //1800px;
+$mobile: 37.5em; //450px
+$tablet-small: 45.625em; //730px
+$tablet: 56.25em;  //900px
+$laptop-small: 75em; //1200px;
+$laptop-big: 93.75em; //1500px (default range)

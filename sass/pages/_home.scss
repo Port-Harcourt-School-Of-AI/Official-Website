@@ -1,9 +1,36 @@
+.home-container{
+    display: grid;
+    grid-template-columns: 12rem 1fr 12rem;
+
+    //reducing container margin for screen sizes
+    @media only screen and (min-width: $desktop){
+        grid-template-columns: 15rem 1fr 15rem; 
+    }
+    @media only screen and (max-width: $tablet){
+        grid-template-columns: 8rem 1fr 8rem; 
+    }
+    @media only screen and (max-width: $mobile){
+        grid-template-columns: 5rem 1fr 5rem; 
+    }
+
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "header header header"
+              ". about ."
+              "actions actions actions"
+              ". tweets ."
+              "footer footer footer";
+
+}    
+
 .header{
     grid-area: header;
 }
+
 .about{
     grid-area: about;
 }
+
 .our-actions{
     grid-area: actions;
     background-color: $secondary-color;
@@ -31,23 +58,47 @@
         }
     }
 }
+
 .footer{
     grid-area: footer;
 }
+
 .about-us{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-column-gap: 5rem;
+
+    &__buttons{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .mvp{
-    margin-top: 10rem;
+    margin-top: 20rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-column-gap: 10rem;
+
+    //Reducing mvp box size for the laptop small screen
+    @media only screen and (max-width: $laptop-small){
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
+        margin-top: 15rem;
+        grid-column-gap: 7rem;
+    }
+    @media only screen and (max-width: $tablet-small){ 
+        margin-top: 44rem;
+        grid-column-gap: 5rem;
+    }
+    @media only screen and (max-width: $mobile){
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+    }
+
+    
 }
+
 .actions{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 5rem;
 }  
