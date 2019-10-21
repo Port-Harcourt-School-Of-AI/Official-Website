@@ -21,7 +21,11 @@
               "support support support"
               ". qualify ."
               "footer footer footer";
-
+    
+    & h3.heading--3{
+        color: $contrast-color;
+    }
+    
 }
 .default-nav{
     grid-area: navigation;
@@ -31,18 +35,96 @@
     grid-area: svg; 
 }
 .about-text{
-    grid-area: main;
+    grid-area: about-text;
 }
+
 .support{
-    grid-area: main;
+    grid-area: support;
+    background-color: $secondary-color;
+    padding: 7rem 0;
 
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 10rem;
+    grid-template-columns: 12rem 1fr 12rem;
+
+    @media only screen and (max-width: $mobile){
+        grid-template-columns: 5rem 1fr 5rem; 
+    }
+    
+    &__box{
+        grid-column: 2 / 3;
+    }
+
+    &__acts{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-column-gap: 8rem;
+
+        @media only screen and (max-width: $mobile){
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        } 
+    }
+
+    &__action{
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+        grid-template-rows: 7rem 1fr;
+        grid-gap: 2rem;
+        grid-template-areas: "indication heading"
+                              ". paragraph"
+                              ". button" ;
+
+        @media only screen and (max-width: $tablet-small){
+            margin-bottom: 8rem;
+        }                      
+
+        & span.icon-circle-right{
+            grid-area: indication;
+            font-size: 6rem;
+            color: $contrast-color;
+        } 
+        
+        & h3.heading--3{
+            grid-area: heading; 
+        }
+
+        & p.paragraph{
+            grid-area: paragraph; 
+
+            
+        }
+
+        & button{
+            grid-area: button; 
+            justify-self: start;
+            align-self: center;
+            margin-left: 0;
+        }
+    }
 }
 .qualify{
-    grid-area: main;
+    grid-area: qualify;
 }
 .footer{
     grid-area: footer;
+}
+
+p.paragraph {
+    & > a {
+        color: $contrast-color;
+        display: inline-block;
+        font-weight: bold;
+        transition: all 0.4s ease-in;
+
+        &:hover{
+            border-bottom: 1rem solid $contrast-color;
+            transform: scaleY(-5px);
+
+        }
+    }
+
+    & > br {
+        display: block; /* makes it have a width */
+        content: ""; /* clears default height */
+        margin-top: 1rem; /* change this to whatever height you want it */
+    }
 }

@@ -1,5 +1,9 @@
 //Animation for header text
-@keyframes shadowMove {
-    0% {background-position: 0 0}
-    100% {background-position: 100% -100%}
+@keyframes shadow {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
 }

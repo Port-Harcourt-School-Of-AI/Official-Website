@@ -38,6 +38,10 @@
 
     display: grid;
     grid-template-columns: 12rem 1fr 12rem;
+
+    @media only screen and (max-width: $mobile){
+        grid-template-columns: 5rem 1fr 5rem; 
+    }
     
     &__box{
         grid-column: 2 / 3;

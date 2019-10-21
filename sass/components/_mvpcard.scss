@@ -8,6 +8,13 @@
         height: 20rem;
         margin-bottom: 5rem;
 
+        @media only screen and (max-width: $tablet-small){
+           height: auto;
+           border-radius: 3px;
+           box-shadow:$default-box-shadow;
+           background-color: #fff;
+        } 
+
       &__side{
         height: 20rem;
         transition: all .5s ease;
@@ -19,17 +26,30 @@
         border-radius: 3px;
         overflow: hidden;
         box-shadow:$default-box-shadow;  
-        color: $text-color-dark;  
+        color: $text-color-dark;
+        
+        @media only screen and (max-width: $tablet-small){
+           height: auto;
+           position:relative;
+           box-shadow: none;
+        } 
         
         &--front{
             background-color: $secondary-color;
             color: $contrast-color;
+            padding: 2rem;
               
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
+            @media only screen and (max-width: $tablet-small){
+               clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            } 
+            
         }
+
         &--back{
             background-color: #fff;
             color: $text-color-dark;
@@ -39,16 +59,29 @@
             justify-content: center;
             align-items: center;
             padding:2rem;
+
+            @media only screen and (max-width: $tablet-small){
+               transform: rotateY(0deg);
+               clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            } 
         }
        
       }
 
      &:hover &__side--front{
         transform: rotateY(-180deg);
+
+        @media only screen and (max-width: $tablet-small){
+           transform: rotateY(0deg);
+         } 
      }
 
      &:hover &__side--back{
         transform: rotateY(0);
+
+        @media only screen and (max-width: $tablet-small){
+             transform: rotateY(0deg);
+         } 
      }
 
      &__icon{

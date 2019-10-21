@@ -15,6 +15,11 @@
         flex-direction: row;
         justify-content: space-around;
         padding-top: -.8rem;
+
+        & .home{
+            display: none;
+            visibility: hidden;
+        }
     }
     
     &__nav-link{
@@ -82,7 +87,11 @@
 
         @media only screen and (max-width: $tablet-small){ 
             font-size: 2rem;
-            margin-top: 1rem
+            margin-top: 1rem;
+        }
+
+        @media only screen and (max-width: $mobile-small){ 
+            font-size: 1.5rem;
         }
 
     }
@@ -171,6 +180,12 @@
         &__checkbox:checked ~ &__background{
             transform:scale(80);
         } 
+
+        &__checkbox:checked ~ &__nav-list .home{
+            display: block;
+            visibility: visible;
+        } 
+
         &__checkbox:checked ~ &__nav-list{
             opacity: 1;
             width: 100%;
@@ -232,7 +247,6 @@
     position: fixed;
     background-color: rgba($primary-color, 0.9) !important;
     height: 11rem;
-    padding: 1rem;
     width: 100vw;
     z-index: 1000;
     transition: all 0.7s ease-in;
@@ -244,6 +258,7 @@
     padding-bottom: 2rem;
     transition: all 0.7s ease-in;
 }
+
 .default-nav + svg{
     width: 100%;
     grid-column: 1 / -1;
