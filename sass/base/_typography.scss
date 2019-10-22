@@ -78,17 +78,13 @@
         font-weight: 500;
 
         @media only screen and (max-width: $tablet-small){ 
-            font-size: 2rem;
+            font-size: 2.5rem;
         }
     }
 }
 .paragraph{
     font-size: $default-font-size;
     font-family: $primary-font;
-
-    @media only screen and (max-width: $tablet-small){ 
-        font-size: 1.6rem;
-    }
     
     &:not(:last-child){
         margin-bottom: 2.5rem;

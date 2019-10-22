@@ -101,14 +101,11 @@ textarea:focus {
     font-weight: 500; }
     @media only screen and (max-width: 45.625em) {
       .heading--3 {
-        font-size: 2rem; } }
+        font-size: 2.5rem; } }
 
 .paragraph {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-family: "Roboto Slab", serif; }
-  @media only screen and (max-width: 45.625em) {
-    .paragraph {
-      font-size: 1.6rem; } }
   .paragraph:not(:last-child) {
     margin-bottom: 2.5rem; }
 
@@ -170,6 +167,9 @@ textarea:focus {
     align-items: center;
     justify-content: center;
     transform: translateY(3rem); }
+    @media only screen and (max-width: 45.625em) {
+      .header__text {
+        transform: translateY(1rem); } }
   .header__buttons {
     display: flex;
     padding-top: 5rem; }
@@ -207,7 +207,7 @@ textarea:focus {
 .btn {
   text-transform: capitalize;
   border-radius: 5px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-decoration: none;
   padding: 1.4rem 4rem;
   margin: 1rem 1.5rem;
