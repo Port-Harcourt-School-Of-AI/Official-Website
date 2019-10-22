@@ -44,12 +44,14 @@
 .quote {
     grid-area: quote;
    text-align: center;
+
    
    & p{
       font-size: 2.5rem;
       font-family: $secondary-font;
       letter-spacing: .5rem;
       font-style: oblique;
+      font-weight: bold;
       color: $text-color-grey;
       initial-letter: 2;
       margin-top: 3rem;

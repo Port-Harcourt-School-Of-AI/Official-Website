@@ -819,6 +819,7 @@ textarea:focus {
     font-family: "Big Shoulders Text", cursive;
     letter-spacing: .5rem;
     font-style: oblique;
+    font-weight: bold;
     color: #777777;
     initial-letter: 2;
     margin-top: 3rem; }
