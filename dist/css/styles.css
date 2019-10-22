@@ -282,22 +282,41 @@ textarea:focus {
   transition: all .2s; }
   @media only screen and (max-width: 45.625em) {
     .gallery__photo {
-      height: 25rem; } }
+      height: 25rem;
+      width: 60%; } }
   .gallery__photo--1 {
     left: 0;
     top: -2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__photo--1 {
+        left: -2rem; } }
   .gallery__photo--2 {
     right: 2rem;
     top: .5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__photo--2 {
+        right: 0; } }
   .gallery__photo--3 {
     top: 15rem;
     left: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__photo--3 {
+        top: 20rem;
+        left: 0; } }
   .gallery__photo--4 {
     right: 0;
     top: 17rem; }
+    @media only screen and (max-width: 37.5em) {
+      .gallery__photo--4 {
+        top: 22rem;
+        right: -2rem; } }
   .gallery__photo--5 {
     left: 25%;
     top: 6rem; }
+    @media only screen and (max-width: 45.625em) {
+      .gallery__photo--5 {
+        display: none;
+        visibility: hidden; } }
   .gallery__photo:hover {
     cursor: pointer;
     outline: 1rem solid #152026;
@@ -337,7 +356,7 @@ textarea:focus {
     .mvp-card__side--front {
       background-color: #f7f7f7;
       color: #1a8981;
-      padding: 2rem;
+      padding: 3rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
