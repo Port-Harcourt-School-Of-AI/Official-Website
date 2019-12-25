@@ -7,10 +7,10 @@
         grid-template-columns: 15rem 1fr 15rem; 
     }
     @media only screen and (max-width: $tablet){
-        grid-template-columns: 10rem 1fr 10rem; 
+        grid-template-columns: 7rem 1fr 7rem; 
     }
     @media only screen and (max-width: $mobile){
-        grid-template-columns: 8rem 1fr 8rem; 
+        grid-template-columns: 3rem 1fr 3rem; 
     }
     
     grid-template-rows: auto;
