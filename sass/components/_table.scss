@@ -23,7 +23,8 @@ thead{
 @media screen and (max-width: 600px){
     /* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
-		display: block; 
+        display: block; 
+        font-size: 1.7rem;
 	}
 	
 	/* Hide table headers (but not display: none;, for accessibility) */

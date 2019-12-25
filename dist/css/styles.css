@@ -287,7 +287,8 @@ thead {
 @media screen and (max-width: 600px) {
   /* Force table to not be like tables anymore */
   table, thead, tbody, th, td, tr {
-    display: block; }
+    display: block;
+    font-size: 1.7rem; }
   /* Hide table headers (but not display: none;, for accessibility) */
   thead tr {
     position: absolute;
@@ -398,7 +399,7 @@ thead {
       box-shadow: 0 1.5rem 4rem rgba(14, 13, 13, 0.4);
       background-color: #fff; } }
   .mvp-card__side {
-    height: 23rem;
+    height: 25rem;
     transition: all .5s ease;
     position: absolute;
     top: 0;
