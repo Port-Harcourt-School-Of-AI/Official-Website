@@ -1,4 +1,4 @@
-.team-container{
+.learning-container{
     display: grid;
     grid-template-columns: 12rem 1fr 12rem;
 
@@ -17,8 +17,7 @@
     grid-template-areas: 
               "navigation navigation navigation"
               "svg svg svg"
-              ". quote ."
-              ". team ."
+              ". syllabus ."
               "footer footer footer";
 
 }
@@ -30,38 +29,10 @@
     grid-area: svg; 
 }
 
-.team{
-    grid-area: team;
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-    grid-column-gap: 10rem ;
-    padding: 4rem;
+.syllabus{
+    grid-area: syllabus;
+    padding: 3rem;
 }
 .footer{
     grid-area: footer;
-}
-
-.quote {
-    grid-area: quote;
-    text-align: center;
-    padding: 4rem;
-
-   
-   & p{
-      font-size: 2.5rem;
-      font-family: $secondary-font;
-      letter-spacing: .5rem;
-      font-style: oblique;
-      font-weight: bold;
-      color: $text-color-grey;
-      initial-letter: 2;
-      margin-top: 3rem;
-
-      & span{
-        text-transform: uppercase;
-        text-align: right;
-
-      }
-    }
 }

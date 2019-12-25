@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://phcschoolofai.org/sitemap.xml

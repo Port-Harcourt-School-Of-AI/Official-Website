@@ -5,8 +5,10 @@
         perspective: 150rem;
         -moz-perspective: 150rem;
         position:relative;
-        height: 20rem;
+        height: 27rem;
         margin-bottom: 5rem;
+        padding: 1.5rem;
+        text-align: center;
 
         @media only screen and (max-width: $tablet-small){
            height: auto;
@@ -16,7 +18,7 @@
         } 
 
       &__side{
-        height: 20rem;
+        height: 23rem;
         transition: all .5s ease;
         position:absolute;
         top: 0;

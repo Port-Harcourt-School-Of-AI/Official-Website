@@ -113,10 +113,10 @@ p.paragraph {
         color: $contrast-color;
         display: inline-block;
         font-weight: bold;
-        transition: all 0.4s ease-in;
+        transition: all 0.2s ease-in;
 
         &:hover{
-            border-bottom: 1rem solid $contrast-color;
+            border-bottom: 0.5rem solid $contrast-color;
             transform: scaleY(-5px);
 
         }

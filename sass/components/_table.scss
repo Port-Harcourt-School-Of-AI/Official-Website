@@ -1,0 +1,49 @@
+table{
+    text-align: left;
+    width: 100%;
+    background-color: $primary-color;
+    font-size: $default-font-size;
+    border-color: $primary-color;
+}
+
+.table-data tr:nth-child(odd){
+    background-color: #dcdcdc;
+}
+.table-data tr:nth-child(even){
+    background-color: white;
+}
+
+.table-data td, thead th {
+    padding: 1.5rem;
+}
+thead{
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    td {
+        display: block;
+        float: left;
+    }
+    thead th {
+        display: none;
+    }
+    td::before {
+        display: block;
+        font-weight: bold;
+    }
+    td:nth-child(1):before {
+        content: "Week";
+    }
+    td:nth-child(2):before {
+        content: "Week Subject";
+    }
+    td:nth-child(3):before {
+        content: "Deliverabe(s) ";
+    }
+    td {
+        width: 40%;
+    }
+    
+    
+}
