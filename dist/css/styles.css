@@ -551,7 +551,7 @@ thead {
       cursor: pointer; }
     .navigation__nav-link:hover {
       transform: translateY(-3px); }
-    .navigation__nav-link a:active {
+    .navigation__nav-link a:active, .navigation__nav-link a:visited {
       border-bottom: 2px solid #1a8981; }
   .navigation__logo-box {
     display: flex; }
