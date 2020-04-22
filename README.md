@@ -1,5 +1,11 @@
 # Official-Website
-Repository to code for our official website
+Repository to code for our official website.
+
+## Technologies
+* HTML
+* SASS
+* Gulp
+* A lil bit of Javascript
 
 ## To Contribute
 * Fork the project

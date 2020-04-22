@@ -48,4 +48,79 @@ textarea:focus{
     outline: 1px solid $primary-color;
 }
 
+/*Styles for Internet Explorer*/
+@media screen\9, screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    .about-us, .mvp , .our-actions__box{
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
 
+    .about-container section{
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+
+    .about-text p.ie-process{
+      display: block;
+      visibility: visible;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .support__action{
+      margin-top: 5rem;
+    }
+    
+    .default-nav{
+      height: 30rem;
+    }
+  
+    .about .mvp{
+      margin-top: 90rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      &-card{
+          width: 25vw;
+          margin-left: 5rem;
+      }
+    }
+  
+    .about-us__gallery{
+      margin-top: 15rem;
+      
+      & img{
+        height: 40rem;
+      }
+    }
+     
+    .quote{
+      margin-top: 4rem;
+    }
+
+    .team-container .team{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem !important;
+    }
+  
+    .team-member{
+      width: 30rem;
+      height: 50rem;
+      margin-left: 10rem;
+    }
+
+    body .footer{
+      height:30rem; 
+      margin-top: 8rem;
+    }
+  
+    .footer svg, .header svg, .default-nav + svg{
+      display: none;
+      visibility: hidden;
+    }
+  
+    .footer .footer__text{
+      padding-top: 15rem;
+    }
+  }
