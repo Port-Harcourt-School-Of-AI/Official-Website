@@ -104,7 +104,7 @@
     } 
 
     //Collapsed navigation for mobile and tablet view
-    @media only screen and (max-width: $tablet-small){
+    @media only screen and (max-width: $tablet){
         &__checkbox{
             display:none;
         }
