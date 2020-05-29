@@ -1,5 +1,15 @@
 # Official-Website
-Repository to code for our official website
+Repository to code for our official website.
+
+The Port Harcourt School of AI is a non profit educational platform that democratises Machine Learning and Data Science Education Underdeserved groups in Nigeria.
+
+This website is built with a heavy dose of CSS3 grids. Know that before digging into the SASS codebase.
+
+## Technologies
+* HTML
+* SASS
+* Gulp
+* A lil bit of Javascript
 
 ## To Contribute
 * Fork the project
