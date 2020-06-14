@@ -1,0 +1,49 @@
+.podcasts-container{
+
+    display: grid;
+    grid-template-columns: 12rem 1fr 12rem;
+
+    //reducing container margin for screen sizes
+    @media only screen and (min-width: $desktop){
+        grid-template-columns: 15rem 1fr 15rem; 
+    }
+    @media only screen and (max-width: $tablet){
+        grid-template-columns: 8rem 1fr 8rem; 
+    }
+    @media only screen and (max-width: $mobile){
+        grid-template-columns: 3rem 1fr 3rem; 
+    }
+    
+    grid-template-rows: auto;
+    grid-template-areas: 
+              "navigation navigation navigation"
+              "svg svg svg"
+              ". quote ."
+              ". podcasts ."
+              "footer footer footer";
+
+}
+.default-nav{
+    grid-area: navigation;
+    transition: all 0.7s ease-in;
+} 
+.nav-svg{
+    grid-area: svg; 
+}
+
+
+.quote {
+    grid-area: quote;
+}
+
+.podcasts{
+    grid-area: podcasts;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer{
+    grid-area: footer;
+}

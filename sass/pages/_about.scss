@@ -109,18 +109,7 @@
 }
 
 p.paragraph {
-    & > a {
-        color: $contrast-color;
-        display: inline-block;
-        font-weight: bold;
-        transition: all 0.2s ease-in;
-
-        &:hover{
-            border-bottom: 0.5rem solid $contrast-color;
-            transform: scaleY(-5px);
-
-        }
-    }
+    
 
     & > br {
         display: block; /* makes it have a width */
