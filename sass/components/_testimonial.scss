@@ -1,0 +1,62 @@
+.testimonial{
+    min-height: 40rem;
+    width: 30rem;
+    border-radius: 1rem;
+    margin-right: 5rem;
+    padding: 2rem;
+    position: relative;
+    border: 4px solid $secondary-color;
+    background-color: white;
+    flex-shrink: 0;
+
+    &:hover{
+        animation-play-state: paused;
+    }
+    
+    &:before{
+        content: "";
+        display:block;
+        position:absolute;
+        height: 40rem;
+        width: 100%;
+        border-radius: 1rem;
+        z-index: -1;
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        border: 2px dashed $contrast-color;
+        background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px, $contrast-color 0, $contrast-color 5px);
+    }
+
+    & .paragraph{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    &__title,&__name{
+        display: block;
+        text-align: center;
+        
+    }
+
+    &__name{
+        font-size: 2.5rem;
+        color:$contrast-color;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+    }
+
+    /* &.first{
+        animation: bannermove 30s linear infinite;
+    } */
+    
+}
+
+.apostrophe{
+        font-size: 2rem;
+        font-weight: bold;
+        color: $contrast-color;
+    
+}

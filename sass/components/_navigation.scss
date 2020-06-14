@@ -2,7 +2,7 @@
 
     display: grid;
     grid-template-columns: max-content 1fr;
-    grid-column-gap: 18rem;
+    grid-column-gap: 8rem;
     padding: 3rem 1rem;
     transition: all 0.7s ease-in;
 
@@ -247,17 +247,17 @@
 .sticky {
     position: fixed;
     background-color: rgba($primary-color, 0.9) !important;
-    height: 11rem;
+    /* height: 11rem; */
     width: 100vw;
     z-index: 1000;
-    transition: all 1s ease-in-out;
+    animation: nav-slidein .2s ease-in-out;
 }
 
 .default-nav{
     background-color: $primary-color;
     color: $text-color-light;
     padding-bottom: 2rem;
-    transition: all 1s ease-in-out;
+    transition: all 1s linear;
 }
 
 .default-nav + svg{
@@ -271,3 +271,14 @@
     }
 }
 
+@keyframes nav-slidein{
+    0%{
+        height:0rem;
+    }
+    0%{
+        height:5rem;
+    }
+    100%{
+        height: 11rem
+    }
+}

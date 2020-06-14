@@ -18,6 +18,7 @@
         "header header header"
         ". about ."
         "actions actions actions"
+        ". testimonials ."
         ". tweets ."
         "footer footer footer";
 }
@@ -44,6 +45,20 @@
 
     &__box {
         grid-column: 2 / 3;
+    }
+}
+.testimonials{
+    grid-area: testimonials; 
+
+    &__box {
+        width: calc(100vw - 23rem);
+        display: flex;
+        padding: 2rem;
+        flex-direction: row;
+
+        @media only screen and (max-width: $mobile) {
+            width: calc(100vw - 13rem);
+        }
     }
 }
 .tweets {

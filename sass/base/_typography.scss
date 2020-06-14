@@ -15,13 +15,8 @@
           //styles to make the heading animate
           position: relative;
           overflow: hidden;
-          background: linear-gradient(90deg, #000, #fff, #000);
-          background-repeat: no-repeat;
-          background-size: 80%;
-          animation: shadow 3s linear infinite;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: rgba(255, 255, 255, 0);
+          
+          
 
           @media only screen and (max-width: $tablet-small){ 
             font-size: 3rem;

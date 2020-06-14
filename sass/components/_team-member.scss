@@ -19,6 +19,49 @@
         update the url of the background image.
         Background image declaration appears twice for fallback for browsers that do not support linear gradient.
         */
+        &--1{
+            background-image: url(../../media/team/stephen.jpg);
+            
+
+        }
+        &--2{
+            background-image: url(../../media/team/linda-ikechukwu.jpg);
+           
+
+        }
+        &--3{
+            background-image: url(../../media/team/brain.jpg);
+            
+        }
+        &--4{
+            background-image:  url(../../media/team/tonye.jpg);
+            
+        }
+        &--5{
+            background-image:  url(../../media/team/boris.jpg);
+           
+
+        }
+        &--6{
+            background-image: url(../../media/team/rising.jpg);
+            
+        }
+        &--7{
+            background-image: url(../../media/team/Jennifer.jpg);
+            
+
+        }
+        &--8{
+            background-image:  url(../../media/team/george.jpg);
+            
+
+        }
+        &--9{
+            background-image: url(../../media/team/yoma.jpg);
+            
+
+        }
+
 
         @supports(background-image: linear-gradient(to right bottom,$primary-color,$primary-color),url()){
             &--1{
@@ -77,49 +120,7 @@
             } 
         }
         
-        &--1{
-            background-image: url(../../media/team/stephen.jpg);
-            
-
-        }
-        &--2{
-            background-image: url(../../media/team/linda-ikechukwu.jpg);
-           
-
-        }
-        &--3{
-            background-image: url(../../media/team/brain.jpg);
-            
-        }
-        &--4{
-            background-image:  url(../../media/team/tonye.jpg);
-            
-        }
-        &--5{
-            background-image:  url(../../media/team/boris.jpg);
-           
-
-        }
-        &--6{
-            background-image: url(../../media/team/rising.jpg);
-            
-        }
-        &--7{
-            background-image: url(../../media/team/Jennifer.jpg);
-            
-
-        }
-        &--8{
-            background-image:  url(../../media/team/george.jpg);
-            
-
-        }
-        &--9{
-            background-image: url(../../media/team/yoma.jpg);
-            
-
-        }
-
+        
        
         
     }

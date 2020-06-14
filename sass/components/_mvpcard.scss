@@ -13,7 +13,7 @@
         @media only screen and (max-width: $tablet-small){
            height: auto;
            border-radius: 3px;
-           box-shadow:$default-box-shadow;
+           box-shadow:$box-shadow-hover;
            background-color: #fff;
         } 
 
@@ -27,7 +27,7 @@
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-        box-shadow:$default-box-shadow;  
+        box-shadow:$box-shadow-hover;  
         color: $text-color-dark;
         
         @media only screen and (max-width: $tablet-small){

@@ -42,6 +42,19 @@ ul{
     list-style-type: none;
 }
 
+.link {
+  color: $contrast-color;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+
+  &:hover{
+      border-bottom: 2px solid $contrast-color;
+      transform: scaleY(-2px);
+
+  }
+}
+
 button:focus,
 input:focus,
 textarea:focus{

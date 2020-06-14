@@ -60,5 +60,14 @@ gulp.task('images3',function(){
         .pipe(imagemin())
         .pipe(gulp.dest('./media/images/'));
 });
+gulp.task('images4',function(){ 
+	var imagesSrc =[
+        './media/podcast/*',
 
-gulp.task('default', ['styles','scripts','images1','images2','images3']); 
+    ] 
+    return gulp.src(imagesSrc)
+        .pipe(imagemin())
+        .pipe(gulp.dest('./media/podcast/'));
+});
+
+gulp.task('default', ['styles','scripts','images1','images2','images3, images4']); 
