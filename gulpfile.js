@@ -6,71 +6,30 @@ var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');  
 var rename      = require('gulp-rename');  
 
-gulp.task('styles',function(){  
-    var stylesSrc = [
-        './css/**/*.css'
-    ];
-    return gulp.src(stylesSrc)
-        .pipe(concat('dev.css'))
-        .pipe(gulp.dest('./dist/css/'))
-        .pipe(rename('external.min.css'))
-        .pipe(minifyCSS())
-        .pipe(gulp.dest('./dist/css/'));
-});
-
-gulp.task('scripts',function(){  
-    var scriptSrc =[
-        './js/vendor/**/*.js',
-        './js/index.js'
-
-    ];
-    gulp.src(scriptSrc)
-        .pipe(concat('dev.js'))
-        .pipe(gulp.dest('./dist/js'))
-        .pipe(rename('prod.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('.dist/js'));
-});
-
 //Tasks for the different image directory
 gulp.task('images1',function(){ 
-	var imagesSrc =[
-        './media/images/gallery/*',
-
-    ] 
-    return gulp.src(imagesSrc)
+    return gulp.src('media/images/gallery/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./media/images/gallery/'));
+        .pipe(gulp.dest('dist/images'));
 });
-gulp.task('images2',function(){ 
-	var imagesSrc =[
-        './media/images/team/*',
 
-    ] 
-    return gulp.src(imagesSrc)
+gulp.task('images2',function(){ 
+    return gulp.src('./media/images/team/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./media/images/team/'));
 });
 
 gulp.task('images3',function(){ 
-	var imagesSrc =[
-        './media/images/*',
-
-    ] 
-    return gulp.src(imagesSrc)
+    return gulp.src('./media/images/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./media/images/'));
 });
 
 gulp.task('images4',function(){ 
-	var imagesSrc =[
-        './media/podcast/*',
-
-    ] 
-    return gulp.src(imagesSrc)
+    return gulp.src('./media/podcast/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./media/podcast/'));
 });
 
 
-gulp.task('default', ['styles','scripts','images1','images2','images3, images4']); 
+gulp.task('default', ['images1','images2','images3', 'images4']); 
