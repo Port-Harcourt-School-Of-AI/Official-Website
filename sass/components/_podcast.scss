@@ -1,5 +1,5 @@
 .podcast {
-    height: 52rem;
+    height: 100%;
     width: 45%;
     border-radius: 1rem;
     padding: 1rem;
@@ -20,7 +20,7 @@
         content: "";
         display: block;
         position: absolute;
-        height: 53rem;
+        height: 108%;
         width: 110%;
         border-radius: 1rem;
         z-index: -1;
