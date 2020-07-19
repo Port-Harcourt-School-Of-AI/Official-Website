@@ -18,7 +18,7 @@
     grid-template-areas: 
               "navigation navigation navigation"
               "svg svg svg"
-              ". quote ."
+              ". intro ."
               ". podcasts ."
               "footer footer footer";
 
@@ -32,8 +32,11 @@
 }
 
 
-.quote {
-    grid-area: quote;
+.intro {
+    grid-area: intro;
+    font-size: 2.2rem;
+    font-style: italic;
+    margin: 4rem 0;
 }
 
 .podcasts{
